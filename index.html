@@ -1,0 +1,12 @@
+<html>
+	<head>
+    <title>HotMouse 0.1</title>
+		<script type = "text/javascript" src = "hotMouse.js"></script>
+	</head>
+	<body>
+    <input style = "position: absolute; top: 30px; z-index: 1;" type = "button" value= "Upload my mouse points!" onclick = "uploadMousePoints()">
+    <input style = "position: absolute; top: 60px; z-index: 1;" type = "button" value= "Show my mouse moints" onclick = "getMousePoints('my')">
+    <input style = "position: absolute; top: 90px; z-index: 1;" type = "button" value= "Show all mouse points!" onclick = "getMousePoints('all')">
+    <canvas id = "myCanvas" style = "position: absolute;"></canvas>
+	</body>
+</html>
