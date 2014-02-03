@@ -1,11 +1,8 @@
 <?php
 session_start();
-$condition = "";
-if($_POST["option"] == "my")
-  $condition = " WHERE session = '" . session_id() . "'";
 
 $db = new SQLite3("MouseSpy.db3");
-$result = $db->query("SELECT points FROM visitors" . $condition);
+$result = $db->query("SELECT points FROM visitors");
 if(!$result)
   return lastErrorMsg();
 
